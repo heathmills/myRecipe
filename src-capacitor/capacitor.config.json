@@ -1,7 +1,0 @@
-{
-  "appId": "com.myRicipe.mo.app",
-  "appName": "myRecipe",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www"
-}
