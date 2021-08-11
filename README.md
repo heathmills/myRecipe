@@ -4,18 +4,18 @@ A Quasar Framework app
 
 ## Install the dependencies
 ```bash
-npm install
+yarn
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
-quasar dev
+yarn run dev
 ```
 
 
-### Build the app for production
+### Run Cypress
 ```bash
-quasar build
+yarn run test:e2e
 ```
 
 ### Customize the configuration

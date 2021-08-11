@@ -7,11 +7,13 @@
   "private": true,
   "scripts": {
     "icons": "icongenie generate -i appIcon.png --skip-trim --theme-color 00A3A3",
-    "tauri": "tauri"
+    "dev": "quasar dev",
+    "test": "echo \"See package.json => scripts for available tests.\" && exit 0",
+    "test:e2e": "cross-env E2E_TEST=true start-test \"quasar dev\" http-get://localhost:8080 \"cypress open\"",
+    "test:e2e:ci": "cross-env E2E_TEST=true start-test \"quasar dev\" http-get://localhost:8080 \"cypress run\""
   },
   "dependencies": {
     "@quasar/extras": "^1.10.7",
-    "@tauri-apps/api": "^1.0.0-beta.4",
     "core-js": "^3.6.5",
     "filepond": "^4.26.0",
     "localbase": "^0.7.5",
@@ -23,7 +25,9 @@
   },
   "devDependencies": {
     "@quasar/app": "^3.0.0-rc.3",
-    "@tauri-apps/cli": "^1.0.0-beta.5"
+    "@quasar/quasar-app-extension-testing": "^1.0.3",
+    "@quasar/quasar-app-extension-testing-e2e-cypress": "^3.1.0",
+    "eslint-plugin-cypress": "^2.11.1"
   },
   "browserslist": [
     "last 10 Chrome versions",
